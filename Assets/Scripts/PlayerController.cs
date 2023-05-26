@@ -7,10 +7,11 @@ public class PlayerController : MonoBehaviour
     public float speed = 4.0f;
     private const string horizontal = "Horizontal";
     private const string vertical = "Vertical";
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,5 +28,8 @@ public class PlayerController : MonoBehaviour
         {
             this.transform.Translate(new Vector3(0, v * speed * Time.deltaTime, 0));
         }
+
+        animator.SetFloat(horizontal, h);
+        animator.SetFloat(vertical, v);
     }
 }
