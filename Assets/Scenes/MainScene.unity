@@ -41249,7 +41249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32befaa49ba06914292f0f679a11ee2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 210
   lastMovement: {x: 0, y: 0}
 --- !u!95 &1524085997
 Animator:
@@ -41285,7 +41285,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 10
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

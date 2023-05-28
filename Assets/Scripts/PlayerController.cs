@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
     {
         walking = false;
 
-        if (Mathf.Abs(moveHorizontal) > 0.5f)
+        /*if (Mathf.Abs(moveHorizontal) > 0.5f)
         {
             playerRigidbody.AddForce(new Vector2(moveHorizontal * speed, 0f), ForceMode2D.Impulse);
             walking = true;
@@ -93,6 +93,45 @@ public class PlayerController : MonoBehaviour
             playerRigidbody.AddForce(new Vector2(0f, moveVertical * speed), ForceMode2D.Impulse);
             walking = true;
             lastMovement = new Vector2(0, moveVertical);
+        }*/
+
+        /*if (Mathf.Abs(moveHorizontal) > 0.5f)
+        {
+            /*this.transform.Translate(
+                new Vector3(Input.GetAxisRaw(horizontal) * speed * Time.deltaTime,0,0));
+           */
+        /*    playerRigidbody.velocity = new Vector2(
+                moveHorizontal * speed * Time.deltaTime,
+                playerRigidbody.velocity.y).normalized;
+            walking = true;
+            lastMovement = new Vector2(moveHorizontal, 0);
+        }
+
+        if (Mathf.Abs(moveVertical) > 0.5f)
+        {
+            /*this.transform.Translate(
+                new Vector3(0, Input.GetAxisRaw(vertical)*speed*Time.deltaTime,0));
+
+            */
+        /* playerRigidbody.velocity = new Vector2(
+             playerRigidbody.velocity.x,
+             moveVertical * speed * Time.deltaTime
+             ).normalized;
+         walking = true;
+         lastMovement = new Vector2(0, moveVertical);
+     }*/
+
+        if (Mathf.Abs(moveHorizontal) > 0.5f ||
+                Mathf.Abs(moveVertical) > 0.5)
+        {
+            walking = true;
+
+            lastMovement = new Vector2(
+                moveHorizontal,
+                moveVertical);
+
+            playerRigidbody.velocity = lastMovement.normalized *
+                speed * Time.deltaTime;
         }
 
         if (!walking)
