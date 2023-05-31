@@ -7,11 +7,17 @@ public class SpawnZone : MonoBehaviour
     private PlayerController thePlayer;
     private CamaraFollow theCamera;
     public Vector2 facingDirection = Vector2.zero;
+    public string placeName;
     // Start is called before the first frame update
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerController>();
         theCamera = FindObjectOfType<CamaraFollow>();
+
+        if (!thePlayer.nextPlaceName.Equals(placeName))
+        {
+            return;
+        }
 
         thePlayer.transform.position = this.transform.position;
         theCamera.transform.position = new Vector3(

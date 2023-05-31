@@ -6846,6 +6846,10 @@ PrefabInstance:
       propertyPath: newPlaceName
       value: MainScene
       objectReference: {fileID: 0}
+    - target: {fileID: 1863820816006497318, guid: 55ea84ccc3bd58e4b815db7ca06c08e4, type: 3}
+      propertyPath: goToPlaceName
+      value: BackDoorOutside
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55ea84ccc3bd58e4b815db7ca06c08e4, type: 3}
 --- !u!1 &1092725233
@@ -7966,6 +7970,10 @@ PrefabInstance:
       propertyPath: newPlaceName
       value: MainScene
       objectReference: {fileID: 0}
+    - target: {fileID: 1863820816006497318, guid: 55ea84ccc3bd58e4b815db7ca06c08e4, type: 3}
+      propertyPath: goToPlaceName
+      value: MainDoorOutside
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55ea84ccc3bd58e4b815db7ca06c08e4, type: 3}
 --- !u!1001 &5962175873874413312
@@ -8022,6 +8030,10 @@ PrefabInstance:
     - target: {fileID: 5962175873248739641, guid: cce5833d5e86dd746b52a217067843c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954957840162589548, guid: cce5833d5e86dd746b52a217067843c8, type: 3}
+      propertyPath: placeName
+      value: FirstHouseInterior
       objectReference: {fileID: 0}
     - target: {fileID: 7954957840162589548, guid: cce5833d5e86dd746b52a217067843c8, type: 3}
       propertyPath: facingDirection.y

@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private float moveVertical;
 
     public static bool playerCreated;
+    public string nextPlaceName;
     // Start is called before the first frame update
     void Start()
     {
