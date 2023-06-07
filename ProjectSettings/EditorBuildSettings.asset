@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HouseInteriorScene.unity
     guid: 52ca8cbb5d2bd2d4f83afe4602e530d2
+  - enabled: 1
+    path: Assets/Scenes/ForestHouseInteriorScene.unity
+    guid: 492a190f5e7675243b7ae2288757bfac
   m_configObjects: {}
